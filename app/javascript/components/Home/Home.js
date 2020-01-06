@@ -1,6 +1,11 @@
 import React, { Component} from 'react';
 import Jumbotron from './Jumbotron'
 import Table from './Table/Table';
+import styled from 'styled-components';
+
+const Body = styled.div`
+  background: #f6f9fc;
+` 
 
 class Home extends Component {
   constructor(props) {
@@ -19,10 +24,10 @@ class Home extends Component {
 
   render() {
     return(
-      <div>
+      <Body>
         <Jumbotron />
-        <Table />
-      </div>
+        <Table course_modules={this.state.course_modules}/>
+      </Body>
     )
   };
 };
