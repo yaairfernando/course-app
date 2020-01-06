@@ -24,7 +24,7 @@ const Section = styled(
     top: 0;
     right: 0;
     width: 100%;
-    height: 64.1%;
+    height: 550px;
     background: #d24d57;
     opacity: 0.75;
   }
