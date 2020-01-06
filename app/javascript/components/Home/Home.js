@@ -18,15 +18,35 @@ class Home extends Component {
         { id: 3, title: 'Building a Hello World', description: 'Build greate application', active: false},
         { id: 4, title: 'Adding React Router DOM to your application', description: 'Adding new libraries to your rails application from react', active: false}
       ]
-
     };
+
+    this.handleVideoChange = this.handleVideoChange.bind(this)
+  }
+
+  handleVideoChange(item, e){
+    e.preventDefault();
+    let course_modules = [...this.state.course_modules]
+    course_modules.map((data) => {
+      if(item.id != data.id){
+        data.active = false
+      }
+    });
+    console.log(course_modules)
+    console.log(item.active)
+    item.active = !item.active
+    console.log(item.active)
+    course_modules[item.id -1] = item
+    this.setState({
+      course_modules: [...course_modules]
+    })
+    debugger
   }
 
   render() {
     return(
       <Body>
         <Jumbotron />
-        <Table course_modules={this.state.course_modules}/>
+        <Table handleVideoChange={this.handleVideoChange} course_modules={this.state.course_modules}/>
       </Body>
     )
   };

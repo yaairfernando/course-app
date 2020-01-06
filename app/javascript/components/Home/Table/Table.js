@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Item from './Item';
+import ActiveoItem from './ActiveItem';
 
 class Table extends Component {
   constructor(props){
@@ -9,7 +10,12 @@ class Table extends Component {
 
   render() {
     const item = this.props.course_modules.map(course =>{
-      return <Item key={course.id} title={course.title} description={course.description}/>
+      let handleVideoChange = this.props.handleVideoChange.bind(this, course)
+      return (
+        course.active ?
+        <ActiveoItem handleVideoChange={handleVideoChange} key={course.id} title={course.title} description={course.description} /> :
+        <Item handleVideoChange={handleVideoChange} key={course.id} title={course.title} description={course.description}/>
+      )
     })
 
     return(
