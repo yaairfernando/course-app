@@ -22,7 +22,7 @@ class Table extends Component {
       <div className="pt-5 mt-5">
         <div className="container">
           <div className="text-center">
-            <h2 className="pt-4 pb-4">Rails with react -- Videos</h2>
+            <h2 className="pt-4 pb-4">Learn React and Rails</h2>
           </div>
           {item}
         </div>
