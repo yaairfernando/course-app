@@ -3,6 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield2]][linkedin-url2]
+[![Hireable][hireable]][hireable-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -41,14 +42,100 @@ different videos and plays every video when it is selected.
 
 ### Built With
 The project was developed using the following technologies:
-- [REACT](https://es.reactjs.org/)
+- [React](https://es.reactjs.org/)
 - [JSX](https://reactjs.org/docs/introducing-jsx.html)
-- [AXIOS](https://github.com/axios/axios)
-- [RUBY](https://www.ruby-lang.org/es/)
-- [RUBY AND RAILS](https://rubyonrails.org/)
-- [BOOTSTRAP](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
-- [STYLED-COMPONENTS](https://www.styled-components.com/)
-- [WEBPACKER](https://github.com/rails/webpacker)
+- [Axios](https://github.com/axios/axios)
+- [Rubyt](https://www.ruby-lang.org/es/)
+- [Ruby on Rails](https://rubyonrails.org/)
+- [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+- [Styled-Components](https://www.styled-components.com/)
+- [Wwebpacker](https://github.com/rails/webpacker)
+
+
+## Required Installations
+
+### Prerequisites
+
+This project runs on [Ruby](https://www.ruby-lang.org/en/documentation/installation/), and [Rails](http://installrails.com/)
+
+* Node
+* NPM
+* Ruby
+* Rails
+
+After installation, run `ruby -v` to make sure Ruby installed correctly. Example
+```
+$ ruby -v
+ruby 2.6.4p104 (2019-08-28 revision 67798) [x86_64-linux]
+```
+
+Also make sure that Rails is installed, but running `rails -v`. 
+Example
+```
+$ rails -v
+Rails 6.0.2.1
+```
+
+### Installing
+
+<p>Install the following to get this project running in your machine:</p>
+
+### Instructions
+
+<p>Follow these steps:</p>
+
+Clone the Repository
+
+```Shell
+user@pc:~$ git clone https://github.com/YairFernando67/course-app
+```
+
+Click on the console and to go to the folder that was created
+
+```Shell
+user@pc:~$ cd course-app
+```
+
+This project uses [Postgresql](https://tecadmin.net/install-postgresql-server-on-ubuntu/)
+
+Installing dependencies
+
+```Shell
+user@pc:~/course-app$ bundle install --without production
+```
+
+```Shell
+user@pc:~/course-app$ rails db:create
+```
+
+```Shell
+user@pc:~/course-app$ rails db:migrate
+```
+
+Run this command if you encountered a problem runing rails db:migrate
+
+```Shell
+user@pc:~/course-app$ bundle exec rails db:migrate
+```
+
+### Serve Project
+
+Open two tabs on the console on the same folder course-app
+
+Start the local server with rails:
+
+```Shell
+user@pc:~/course-app$ rails s
+```
+
+Start the local server with react:
+
+```Shell
+user@pc:~/course-app$ ./bin/webpack-dev-server
+```
+
+Open your browser on [http://localhost:3000](http://localhost:3000)
+
 
 ## Contact
 
@@ -95,4 +182,6 @@ Give a ⭐️ if you like this project!
 [license-url]: https://github.com/YairFernando67/course-app/blob/master/LICENSE.txt
 [linkedin-shield2]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url2]: https://www.linkedin.com/in/softwaredeveloperyairfacio/
+[hireable]: https://cdn.rawgit.com/hiendv/hireable/master/styles/flat/yes.svg
+[hireable-url]: https://www.linkedin.com/in/softwaredeveloperyairfacio/
 
